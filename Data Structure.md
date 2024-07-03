@@ -1,5 +1,5 @@
-#链表Linked List
-##单链表
+# 链表Linked List
+## 单链表
 class Node:
     def __init__(self, data):
         self.data = data
@@ -18,7 +18,7 @@ class SinglyLinkedList:
                 current = current.next
             current.next = Node(data)
 
-##双链表
+## 双链表
 class Node:
     def __init__(self, data):
         self.data = data
@@ -40,7 +40,7 @@ class DoublyLinkedList:
             current.next = new_node
             new_node.prev = current
 
-##循环链表
+## 循环链表
 class Node:
     def __init__(self, data):
         self.data = data
