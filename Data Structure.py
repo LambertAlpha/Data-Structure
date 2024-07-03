@@ -2,19 +2,19 @@
 ## 单链表
 class Node:
     def __init__(self, data):
-        self.data = data
-        self.next = None
+        self.data = data #数据
+        self.next = None #节点
 
 class SinglyLinkedList:
     def __init__(self):
-        self.head = None
+        self.head = None #初始节点
 
     def append(self, data):
         if not self.head:
             self.head = Node(data)
         else:
             current = self.head
-            while current.next:
+            while current.next: #如果后面已存在node，就一直顺着走到最后一个
                 current = current.next
             current.next = Node(data)
 
